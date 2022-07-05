@@ -1,0 +1,79 @@
+:root {
+    --primary: #B9D9EB;
+    --secondary:#012169;
+    --tertiary:aliceblue;
+    --fortiary:#B0C4DE;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--primary);
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.answers a:hover{
+    color: var(--tertiary);
+}
+.insBox {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    margin: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    width: max-content;
+}
+
+.start-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+}
+.start button{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--tertiary);
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+.quit, .restart {
+    transform: translate(-50% -50%);
+    color: var(--secondary);
+    font-weight: bold;
+    padding: 1px 8px;
+    display: flex-block;
+    flex-wrap: wrap;
+}
+.buttons {
+    margin: 15px 50px 10px 38%;
+}
+.title {
+    height: 60px;
+    width: inherit;
+    border-bottom: 1 px solid var(--primary);
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0px 0 140px;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.inst {
+    margin-top: 10px;
+    line-height: 2.5;
+}
