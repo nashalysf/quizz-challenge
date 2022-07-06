@@ -40,3 +40,4 @@ the debbuger is:
 4. Console.log
 
 */
+var button = document.getElementById('restart');
