@@ -32,8 +32,8 @@
         </ol> <!--end of instructions-->
         <h3>Good Luck!</h3>
         <div class="buttons">
-          <button class="highscore">Highscores</button>
-          <button class="restart">Let's Start</button>
+          <a href="#part4"><button class="highscore">Highscores</button></a>
+         <a href="#part2"> <button class="restart">Let's Start</button></a>
         </div>
       </div>
     </section><!--end of PART 1-->
@@ -51,61 +51,60 @@
       <!--questions and answers-->
       <section class="questions">
         <div class="q1">
-          <div> 1. Commonly used data types DO Not include:</div>
-        </div>
+          <div> 1. Commonly used data types DO NOT include:</div>
+        </div> 
 
-        <div class="answers">
+        <div class="answers" id="answer-q1">
           <div class="correct">Alerts</div>
-          <div>Booleans</div>
-          <div>Strings</div>
-          <div>Numbers</div>
-        </div>
+          <div class="wrong">Booleans</div>
+          <div class="wrong">Strings</div>
+          <div class="wrong">Numbers</div>
+        </div> <hr/>
         <!--end of q1-->
 
         <div class="q2">
-          <div>2. The condition in an if / else statement is enclosed with:</div>
-        </div>
-        <div class="answers">
+          <div> 2. The condition in an if / else statement is enclosed with:</div>
+        <div class="answers" id="answer-q2">
           <div class="correct">Parenthesis</div>
-          <div>Quotes</div>
-          <div>Curly brackets</div>
-          <div>Square brackets</div>
-        </div>
+          <div class="wrong">Quotes</div>
+          <div class="wrong">Curly brackets</div>
+          <div class="wrong">Square brackets</div>
+        </div> <hr/>
         <!--end of q2-->
 
         <div class="q3">
           <div>3. Array in JavaScript can be used to store ______.</div>
         </div>
-        <div class="answers">
+        <div class="answers" id="answer-q3">
           <div class="correct">All the above</div>
-          <div>Numbers and settings</div>
-          <div>Other arrays</div>
-          <div>Booleans</div>
-        </div>
+          <div class="wrong">Numbers and settings</div>
+          <div class="wrong">Other arrays</div>
+          <div class="wrong">Booleans</div>
+        </div> <hr/>
         <!--end of q3-->
 
-        <div class="q4">
+        <div class="q4" id="answer-q4">
           <div>4. String values must be enclosed withing ______ when being assigned
             to variables.</div>
         </div>
         <div class="answers">
           <div class="correct">Quotes</div>
-          <div>Commas</div>
-          <div>Curly Brackets</div>
-          <div>Parenthesis</div>
-        </div>
+          <div class="wrong">Commas</div>
+          <div class="wrong">Curly Brackets</div>
+          <div class="wrong">Parenthesis</div>
+        </div> <hr/>
         <!--end of q4-->
 
         <div class="q5">
           <div>5. A very useful tool used during development and debugging for
             printing content to the debbuger is:</div>
         </div>
-        <div class="answers">
+        <div class="answers" id="answer-q5">
           <div class="correct">Console.log</div>
-          <div>JavaScript</div>
-          <div>Terminal/bash</div>
-          <div>For loops</div>
-        </div>
+          <div class="wrong">JavaScript</div>
+          <div class="wrong">Terminal/bash</div>
+          <div class="wrong">For loops</div>
+        </div> <hr/>
         <!--end of q5-->
       </section>
       <!--end of questionaire-->
@@ -117,9 +116,45 @@
     </section><!--end of PART 2-->
 
     <!--PART 3-->
+<div class="part3" id="part3">
+    <!--IF BEAT HIGHSCORE-->
+    <div class="top-score">
+        <h2 class="title">Congrats!</h2>
+        <p>You beat your highscore!</p><hr/>
+        <div>
+            <p class="userHighScore">score/30</p>
+            <label for="initials"></label>
+            <input type="text" class="initials" placeholder="Enter your initials" minlength="3" maxlength="10"/>
+        </div>
+        <button type="button" class="submit-btn">submit</button>
+    </div>
+     <!--IF NOT BEAT HIGHSCORE-->
+    <div class="average-score">
+        <h2 class="title">Good Try!</h2>
+        <p>Wanna beat your highscore?</p> <hr/>
+        <div>
+            <p class="userHighScore">score/30</p>
+            <label for="initials"></label>
+            <input type="text" class="initials" placeholder="Enter your initials" minlength="3" maxlength="10"/>
+        </div>
+        <a href="#part4"><button type="button" class="submit-btn">submit</button></a>
+    </div>
+</div><!--end of part 3-->
 
     <!--PART 4-->
-
+<div class="part4" id="part4">
+    <div>
+        <h2 >Highscore</h2>
+        <hr/>
+        <div class="userHighscores">
+            <h4 class="userHighScore">Initials and score</h4>
+        </div> 
+        <div class="buttons" id="p4btns">
+        <a href="#part1"><button type="button" class="quit"> Quit</button></a>
+        <a href="#part2"><button type="button" class="restart">Restart</button></a>
+    </div>
+    </div><!--end of part 4-->
+    </div>
 
   </body>
 </html>
