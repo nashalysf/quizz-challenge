@@ -26,6 +26,7 @@ body{
 }
 /*FIRST PART */
 .part1 {
+     /*transition: .5s ease;*/
     background-color: var(--secondary);
     color: var(--tertiary);
     padding: 25px;
@@ -38,6 +39,12 @@ body{
     justify-content: center;
    
 }
+/*.part1.inactiveInfo{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    z-index: 0;
+}*/
 .highscore, .restart {
     color: var(--tertiary);
     border: solid var(--tertiary);
@@ -100,8 +107,20 @@ h3 {
     width: 20;
     height: 40;
     text-align: center;
-   
+  /*  opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+/*.part2.activeInfo{ 
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}*/
 .part2 header{
     height: 70px;
     padding: 0 20px;
@@ -181,18 +200,19 @@ color: var(--secondary);
 .ans-check .wrong{
     display: none;
 }
-/*.answers .correct{
+.answersCorrect{
     background-color: lightgreen;
     border-color: lightgreen;
     color: #012169;
 }
-.answers .wrong{
+.answersWrong{
     background-color: lightcoral;
     border-color: lightcoral;
     color: #012169;
-}*/
+}
 /*PART 3 */
 .part3{
+     /*transition: .5s ease;*/
     background-color: var(--secondary);
     color: var(--tertiary);
     padding: 50px 50px;
@@ -235,12 +255,26 @@ color: var(--secondary);
 }
 /* PART 4*/
 .part4{
+     /*transition: .5s ease;*/
     background-color: var(--secondary);
     color: var(--tertiary);
     padding: 50px 50px;
     width: 20;
     height: 40;
     text-align: center;
+   /* opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);*/
+}
+.part4.activeInfo{
+    z-index: 4;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .quit{
     color: var(--tertiary);
