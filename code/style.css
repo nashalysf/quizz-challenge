@@ -20,11 +20,12 @@ body{
 .answers a:hover{
     color: var(--tertiary);
 }
-.insBox {
+.part1 {
     background-color: var(--secondary);
     color: var(--tertiary);
     padding: 25px;
     margin: auto;
+    margin-top: 150px;
     position: relative;
     top: 50%;
     left: 100%;
@@ -57,17 +58,34 @@ body{
     background-color: var(--secondary);
     cursor: pointer;
 }
-.quit, .restart {
-    transform: translate(-50% -50%);
-    color: var(--secondary);
+.highscore, .restart {
+    color: var(--tertiary);
+    border: solid var(--tertiary);
     font-weight: bold;
     padding: 1px 8px;
-    display: flex-block;
-    flex-wrap: wrap;
     margin-left: 12px;
+    background-color: transparent;
+}
+.restart{
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    border: 2.7px solid var(--tertiary);
+}
+.restart:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.highscore:hover{
+    color: var(--fortiary);
+    border-color: var(--fortiary);
+
 }
 .buttons {
-    margin: 15px 40px 10px 35%;
+    transform: translate(-50% -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 .title {
     height: 60px;
@@ -85,10 +103,47 @@ body{
 }
 .inst ol li span{
     font-weight: bolder;
+    color: yellow;
 }
 h3 {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
     font-size: 30px;
+}
+.part2{
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    padding: 25px;
+    position: absolute;
+    width: max-content;
+}
+.part2 header{
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.timer{
+    text-align: center;
+    font-weight: bold;
+}
+.ans-check{
+    display: none;
+}
+.q1, .q2, .q3, .q4, .q5{
+    font-size: 30px;
+    
+}
+.answers {
+    font-size: 20px;
+}
+.answers div{
+    border: #B0C4DE solid 3px;
+    width: max-content;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }

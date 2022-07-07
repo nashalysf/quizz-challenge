@@ -9,31 +9,117 @@
   </head>
 
   <body>
-    <!--starting page with button
-    <div class="start">
-      <button type="button" class="start-btn">Start</button>
-    </div>-->
-
-    <!--instructions box-->
-    <section class="insBox">
+    <!--PART 1-->
+    <section class="part1" id="part1">
       <div class="title">
         <span> Rules of the quizz:</span>
       </div>
-      <div class="inst">
+      <div class="inst"> <!--instructions-->
         <ol>
-        <li class="info">You'll have <span>60 seconds</span> to complete the quizz.</li>
-        <li class="info">Once you submit the answer you can't change it.</li>
-        <li class="info">If the answer is wrong, <span> 10 seconds</span> will be reducted from the timer.</li>
-        <li class="info">You can't select answers if the timer goes off.</li>
-        <li class="info">You can't exit the quizz while playing.</li>
-        <li class="info">Your highscore will be measured by correct answers.</li>
-        </ol>
-        <h3> Good luck!</h3>
+          <li class="info">
+            You'll have <span>60 seconds</span> to complete the quizz.
+          </li>
+          <li class="info">Once you submit the answer you can't change it.</li>
+          <li class="info">
+            If the answer is wrong, <span> 10 seconds</span> will be reducted
+            from the timer.
+          </li>
+          <li class="info">You can't select answers if the timer goes off.</li>
+          <li class="info">You can't exit the quizz while playing.</li>
+          <li class="info">
+            Your highscore will be measured by correct answers.
+          </li>
+        </ol> <!--end of instructions-->
+        <h3>Good Luck!</h3>
         <div class="buttons">
-          <button class="quit">Exit</button>
+          <button class="highscore">Highscores</button>
           <button class="restart">Let's Start</button>
         </div>
       </div>
-    </section>
+    </section><!--end of PART 1-->
+
+    <!--PART 2-->
+    <section class="part2" id="part2">
+      <header>
+        <div class="title">Quizz</div>
+        <div class="timer">
+          <div class="time-text">Time Left</div>
+          <div class="time-secs">60</div>
+        </div>
+      </header>
+
+      <!--questions and answers-->
+      <section class="questions">
+        <div class="q1">
+          <div> 1. Commonly used data types DO Not include:</div>
+        </div>
+
+        <div class="answers">
+          <div class="correct">Alerts</div>
+          <div>Booleans</div>
+          <div>Strings</div>
+          <div>Numbers</div>
+        </div>
+        <!--end of q1-->
+
+        <div class="q2">
+          <div>2. The condition in an if / else statement is enclosed with:</div>
+        </div>
+        <div class="answers">
+          <div class="correct">Parenthesis</div>
+          <div>Quotes</div>
+          <div>Curly brackets</div>
+          <div>Square brackets</div>
+        </div>
+        <!--end of q2-->
+
+        <div class="q3">
+          <div>3. Array in JavaScript can be used to store ______.</div>
+        </div>
+        <div class="answers">
+          <div class="correct">All the above</div>
+          <div>Numbers and settings</div>
+          <div>Other arrays</div>
+          <div>Booleans</div>
+        </div>
+        <!--end of q3-->
+
+        <div class="q4">
+          <div>4. String values must be enclosed withing ______ when being assigned
+            to variables.</div>
+        </div>
+        <div class="answers">
+          <div class="correct">Quotes</div>
+          <div>Commas</div>
+          <div>Curly Brackets</div>
+          <div>Parenthesis</div>
+        </div>
+        <!--end of q4-->
+
+        <div class="q5">
+          <div>5. A very useful tool used during development and debugging for
+            printing content to the debbuger is:</div>
+        </div>
+        <div class="answers">
+          <div class="correct">Console.log</div>
+          <div>JavaScript</div>
+          <div>Terminal/bash</div>
+          <div>For loops</div>
+        </div>
+        <!--end of q5-->
+      </section>
+      <!--end of questionaire-->
+      <!--questionaire footer-->
+      <footer class="ans-check">
+        <h2 class="correct">Correct!</h2>
+        <h2 class="wrong">Wrong!</h2>
+      </footer>
+    </section><!--end of PART 2-->
+
+    <!--PART 3-->
+
+    <!--PART 4-->
+
+
   </body>
 </html>
