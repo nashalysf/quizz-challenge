@@ -204,12 +204,13 @@ color: var(--secondary);
 .ans-check .wrong{
     display: none;
 }
-.answersCorrect{
+.Correct{
     background-color: lightgreen;
     border-color: lightgreen;
     color: #012169;
 }
-.answersWrong{
+/*change upppercase to lower*/
+.Wrong{
     background-color: lightcoral;
     border-color: lightcoral;
     color: #012169;
