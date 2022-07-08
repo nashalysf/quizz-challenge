@@ -26,7 +26,7 @@ body{
 }
 /*FIRST PART */
 .part1 {
-     /*transition: .5s ease;*/
+     transition: .5s ease;
     background-color: var(--secondary);
     color: var(--tertiary);
     padding: 25px;
@@ -45,7 +45,7 @@ body{
     transform: translate(-50%, -50%) scale(0.9);
     z-index: 0;
 }*/
-.highscore, .restart {
+.highscore,.restart, #restart {
     color: var(--tertiary);
     border: solid var(--tertiary);
     font-weight: bold;
@@ -53,12 +53,16 @@ body{
     margin-left: 12px;
     background-color: transparent;
 }
-.restart{
+.restart, #restart{
     background-color: var(--tertiary);
     color: var(--secondary);
     border: 2.7px solid var(--tertiary);
 }
 .restart:hover{
+    background-color: var(--fortiary);
+    border-color: var(--fortiary);
+}
+#restart:hover{
     background-color: var(--primary);
     border-color: var(--primary);
 }
@@ -100,7 +104,7 @@ h3 {
 
 /*PART 2 */
 .part2{
-    /*transition: .5s ease;*/
+    transition: .5s ease;
     background-color: var(--secondary);
     color: var(--tertiary);
     padding: 25px;
